@@ -1,0 +1,59 @@
+
+$btnHoverColor:  hsl(266, 57%, 55%);
+$btnColor: hsl(266, 100%, 67%);
+$textColor: hsl(0, 0%, 100%);
+$cardBgColor: hsl(0, 0%, 23%);
+$transitionDuration: 0.4s; 
+
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.header__nav {
+  width: 40%;
+}
+
+.header__nav__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__link__item {
+  color: $textColor;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header__button {
+  background-color: $btnColor;
+  width: 130px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  transition: $transitionDuration;
+
+  &:hover {
+    background-color: $btnHoverColor; 
+  }
+}
+
+.button__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $textColor;
+  font-weight: 600;
+  font-size: 1rem;
+}

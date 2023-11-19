@@ -1,0 +1,30 @@
+@import './reset/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+  background:  #2B2B2B;
+  color:  #FFF;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@import './header/header';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import './discover/discover';
+@import './trending/trending';
+
+.author {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

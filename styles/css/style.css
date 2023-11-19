@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+body {
+  background: #2B2B2B;
+  color: #FFF;
+  font-family: "Work Sans", sans-serif;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.header__nav {
+  width: 40%;
+}
+
+.header__nav__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__link__item {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-align: center;
+}
+
+.header__button {
+  background-color: hsl(266, 100%, 67%);
+  width: 130px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  transition: 0.4s;
+}
+.header__button:hover {
+  background-color: hsl(266, 57%, 55%);
+}
+
+.button__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover__art__container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.discover__art__infoBlock {
+  width: 600px;
+}
+.discover__art__infoBlock__title {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 110%;
+}
+.discover__art__infoBlock__text {
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 25px 0px;
+  width: 90%;
+}
+.discover__art__infoBlock__button {
+  background-color: hsl(266, 100%, 67%);
+  width: 25%;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  margin-bottom: 30px;
+  box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0) inset, 0 0 0 0 rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+.discover__art__infoBlock__button:hover {
+  background-color: hsl(266, 57%, 55%);
+}
+.discover__art__advantages {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.discover__art__advantages__item .num {
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+.discover__art__advantages__item .advantages {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.discover__art__imgCard {
+  z-index: 1;
+  position: relative;
+}
+
+.discover__art__imgCard__info {
+  background-color: hsl(0, 0%, 23%);
+  padding: 30px;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  position: absolute;
+  width: 510px;
+  bottom: -10;
+  z-index: 2;
+}
+.discover__art__imgCard__info__title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+.discover__art__imgCard:hover .discover__art__imgCard__info {
+  top: 0;
+  height: 500px;
+  background-color: hsla(0, 0%, 23%, 0.551);
+}
+
+.author {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
