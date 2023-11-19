@@ -23,8 +23,10 @@ body {
 @import './trending/trending';
 
 .author {
-  width: 22%;
+  width: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  img {
+      margin-right: 10px;
+  }
 }

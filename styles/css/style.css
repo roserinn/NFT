@@ -212,7 +212,6 @@ body {
   z-index: 1;
   position: relative;
 }
-
 .discover__art__imgCard__info {
   background-color: hsl(0, 0%, 23%);
   padding: 30px;
@@ -234,9 +233,63 @@ body {
   background-color: hsla(0, 0%, 23%, 0.551);
 }
 
-.author {
-  width: 22%;
+.trending__container {
+  padding: 100px 0;
+}
+.trending__text {
+  margin-bottom: 70px;
+}
+.trending__row {
   display: flex;
-  justify-content: space-between;
+}
+.trending__column {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2.375rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.text {
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 70px;
+}
+
+.item-trending__imgs {
+  margin-bottom: 30px;
+}
+.item-trending__imgs div {
+  border-radius: 1.25rem;
+  width: 100px;
+  height: 100px;
+  background-color: hsl(266, 100%, 67%);
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.item-trending__imgs div p {
+  font-family: "Space Mono", monospace;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+.item-trending__title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.author {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.author img {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
