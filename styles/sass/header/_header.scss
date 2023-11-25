@@ -1,12 +1,12 @@
-
 $btnHoverColor:  hsl(266, 57%, 55%);
 $btnColor: hsl(266, 100%, 67%);
 $textColor: hsl(0, 0%, 100%);
 $cardBgColor: hsl(0, 0%, 23%);
 $transitionDuration: 0.4s; 
 
+
 .header {
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   z-index: 10;

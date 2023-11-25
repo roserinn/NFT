@@ -21,6 +21,8 @@ body {
 
 @import './discover/discover';
 @import './trending/trending';
+@import './creators/creators';
+@import './categories/categories';
 
 .author {
   width: 100px;
@@ -30,3 +32,5 @@ body {
       margin-right: 10px;
   }
 }
+
+
