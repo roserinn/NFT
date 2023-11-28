@@ -1,0 +1,45 @@
+.weeklyDigest {
+  margin: 100px 0px;
+
+  &__container {
+    background-color: $cardBgColor;
+    border-radius: $borderRadius;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .info {
+    width: 450px;
+
+    &__title {
+      font-size: 3.4rem;
+      font-weight: 600;
+      line-height: 120%;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 160%;
+      margin: 30px 0px;
+    }
+  }
+
+  .email__form {
+    border-radius: $borderRadius;
+    padding: 20px;
+    background: $textColor;
+    position: relative;
+
+    .submit {
+      &__button {
+        top: 0;
+        right: 0;
+        position: absolute;
+        @include button1
+      }
+    }
+  }
+}

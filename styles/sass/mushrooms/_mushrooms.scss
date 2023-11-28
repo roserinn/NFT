@@ -1,0 +1,68 @@
+.mushrooms {
+  background-image: url(/img/home/mushrooms/mushroomsBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 100px 0px;
+
+  &__container {
+    padding: 300px 0px 60px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .author {
+    background: $cardBgColor;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: $borderRadius;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+    &__title {
+      @include h2__styles;
+      margin: 40px 0px
+    }
+
+    &__button {
+      @include button3;
+    }
+
+  }
+
+
+  &__timer {
+    background-color: hsla(0, 0%, 17%, 0.663);
+    padding: 30px;
+    border-radius: $borderRadius;
+    font-family: 'Space Mono', monospace;
+
+    .timer__title {
+      font-size: .9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+    }
+
+    .timerNum {
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      margin: 10px 0px;
+    }
+
+    .timerText {
+      word-spacing: 3.3rem;
+    }
+
+  }
+}

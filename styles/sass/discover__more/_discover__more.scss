@@ -1,0 +1,74 @@
+.discoverMore {
+
+  &__container {
+    padding: 100px 0px;
+  }
+
+  &__title {
+    @include h2__styles
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      @include text__styles
+    }
+
+    &__button {
+      @include button2;
+    }
+  }
+
+  .item {
+    &__info {
+      background-color: $cardBgColor;
+      padding: 20px 30px 25px 30px;
+      border-radius: $borderBottomRadius;
+    }
+  }
+
+  .info__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  .author {
+    margin: 15px 0px;
+
+    p {
+      font-family: 'Space Mono', monospace;
+    }
+  }
+
+  .info__text {
+    display: flex;
+    justify-content: space-between;
+
+    .elem {
+      p {
+        color: $textGrey;
+        font-family: 'Space Mono', monospace;
+        font-size: .9rem;
+        line-height: 110%;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-family: 'Space Mono', monospace;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+}

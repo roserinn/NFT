@@ -1,12 +1,16 @@
+@import './variables';
+@import './mixins/mixin';
 @import './reset/reset';
-
+@import './media_breakpoints';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+
 body {
-  background:  #2B2B2B;
-  color:  #FFF;
+  background:  $bodyBgColor;
+  color: $textColor;
   font-family: 'Work Sans', sans-serif;
+  // font-family: 'Space Mono', monospace;
 }
 
 @import './header/header';
@@ -19,15 +23,43 @@ body {
   margin: 0 auto;
 }
 
+
+@include desktop() {
+  .wrapper {
+    width: 1000px;
+  }
+}
+
+@include tablet() {
+  .wrapper {
+    width: 700px;
+  }
+}
+
+@include mobile() {
+  .wrapper {
+    width: 375px;
+  }
+}
+
+
+
 @import './discover/discover';
 @import './trending/trending';
 @import './creators/creators';
 @import './categories/categories';
+@import './discover__more/discover__more';
+@import './mushrooms/mushrooms';
+@import './howItWorks/howItWorks';
+@import './weeklyDigest/weeklyDigest';
+@import './footer/footer';
+
 
 .author {
   width: 100px;
   display: flex;
   align-items: center;
+  
   img {
       margin-right: 10px;
   }

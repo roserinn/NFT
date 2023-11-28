@@ -1,0 +1,78 @@
+@mixin h2__styles {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+@mixin text__styles {
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+@mixin button1($width) {
+  background-color: $btnColor;
+  width: $width;
+  padding: 19px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: $borderRadius;
+  color: $textColor;
+  transition: $transitionDuration;
+
+  .button__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $textColor;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: $btnHoverColor;
+  }
+}
+
+@mixin button2 {
+    display: flex;
+    align-items: center;
+    border-radius: $borderRadius;
+    padding: 15px 30px;
+    border: 2px solid $btnColor;
+    background-color: transparent;
+    color: $textColor;
+
+    img {
+      margin-right: 10px;
+    }
+}
+
+@mixin button3 {
+  background-color: $textColor;
+  width: 25%;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: $borderRadius;
+  color: $textBlack;
+  transition: $transitionDuration;
+
+  .button__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: $whitebthHover;
+  }
+}
+
+
+
+
+
+

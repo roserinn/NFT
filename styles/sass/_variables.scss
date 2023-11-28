@@ -1,0 +1,50 @@
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ variables ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// z-index system 
+$ui-index-1: 1; //for crawling elements in the total flow
+$ui-index-2: 2; //for crawling elements in the total flow
+$ui-index-3: 3; //for masks and shadows
+$ui-index-4: 4; //sidebars 
+$ui-index-5: 5; //for modal windows
+$ui-index-6: 6; //for modal windows
+
+//colors 
+$btnHoverColor: hsl(266, 57%, 55%);
+$btnColor: hsl(266, 100%, 67%);
+$whitebthHover: hsl(0, 0%, 93%);
+
+$textColor: hsl(0, 0%, 100%);
+$textGrey: hsl(60, 0%, 52%);
+$textBlack: hsl(0, 0%, 0%);
+
+$cardBgColor: hsl(0, 0%, 23%);
+$bodyBgColor: hsl(0, 0%, 17%);
+
+// ----------------------------------------------------------------------------------------------------------------------
+
+// other
+$borderRadius: 20px;
+$borderBottomRadius: 0px 0px 20px 20px;
+$transitionDuration: 0.3s;
+
+// ----------------------------------------------------------------------------------------------------------------------
+
+// @media  
+$ui-mobile: '375px';
+$ui-tablet: '834px';
+$ui-desktop: '1280px';
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.howItWorks {
+
+  &__container {
+    padding: 100px 0px;
+  }
+
+  &__title {
+    @include h2__styles;
+  }
+
+  &__text {
+    @include text__styles;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .column {
+    background-color: $cardBgColor;
+    border-radius: $borderRadius;
+    padding: 50px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 140%;
+      margin: 20px;
+    }
+
+    &__text {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+}
