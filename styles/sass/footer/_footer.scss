@@ -3,8 +3,6 @@
   margin-top: 100px;
 
   &__container {
-    width: 1200px;
-    margin: 0 auto;
     padding: 100px 0px 50px;
   }
 
@@ -17,7 +15,6 @@
   }
 
   .column {
-
     &__text {
       color: $textGrey;
       font-size: 1rem;
@@ -72,5 +69,48 @@
     font-size: .8rem;
     font-weight: 400;
     line-height: 110%;
+  }
+}
+
+@include tablet() {
+  .footer {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+    }
+  
+    .column {
+      margin-bottom: 30px;
+    }
+
+    .email__form {
+      width: 400px;
+    }
+    
+  }
+}
+
+@include mobile() {
+  .footer {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      width: 330px;
+    }
+  
+    .column {
+      margin-bottom: 30px;
+    }
+
+    .email__form {
+      width: 330px;
+      .submit {
+        &__button {
+          @include button1(120px, 18px, .8rem)
+        }
+      }
+    }
+    
   }
 }

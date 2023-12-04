@@ -1,19 +1,20 @@
-@mixin h2__styles {
-  font-size: 2.4rem;
+@mixin h2__styles ($text-align: start, $font-size: 2.4rem) {
+  font-size: $font-size;
   font-weight: 600;
   line-height: 120%;
 }
 
-@mixin text__styles {
-  font-size: 1.375rem;
+@mixin text__styles ($text-align: start, $font-size: 1.4rem) {
+  font-size: $font-size;
   font-weight: 400;
   line-height: 160%;
+  margin: 20px 0px;
 }
 
-@mixin button1($width) {
+@mixin button1($width: 30%, $padding: 18px 20px, $font-size: 1rem) {
   background-color: $btnColor;
   width: $width;
-  padding: 19px 20px;
+  padding: $padding;
   justify-content: center;
   align-items: center;
   border-radius: $borderRadius;
@@ -22,11 +23,15 @@
 
   .button__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: $textColor;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: $font-size;
+
+    img {
+      margin-right: 10px;
+    }
   }
 
   &:hover {
@@ -34,24 +39,27 @@
   }
 }
 
-@mixin button2 {
-    display: flex;
-    align-items: center;
-    border-radius: $borderRadius;
-    padding: 15px 30px;
-    border: 2px solid $btnColor;
-    background-color: transparent;
-    color: $textColor;
+@mixin button2($width: 30%, $padding: 18px 20px, $font-size: 1rem) {
+  font-size: $font-size;
+  width: $width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $borderRadius;
+  padding: $padding;
+  border: 2px solid $btnColor;
+  background-color: transparent;
+  color: $textColor;
 
-    img {
-      margin-right: 10px;
-    }
+  img {
+    margin-right: 10px;
+  }
 }
 
-@mixin button3 {
+@mixin button3 ($width: 30%, $padding: 18px 20px, $font-size: 1rem) {
   background-color: $textColor;
-  width: 25%;
-  padding: 15px 20px;
+  width: $width;
+  padding: $padding;
   justify-content: center;
   align-items: center;
   border-radius: $borderRadius;
@@ -60,19 +68,16 @@
 
   .button__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: $font-size;
+    img {
+      margin-right: 20px;
+    }
   }
 
   &:hover {
     background-color: $whitebthHover;
   }
 }
-
-
-
-
-
-

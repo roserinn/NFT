@@ -86,4 +86,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })
 
- 
+
+// --------------------------- 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger__menu');
+  const menu = document.querySelector('.menu');
+  const overlay = document.querySelector('.overlay');
+  const body = document.querySelector('body');
+
+  burger.addEventListener('click', () => {
+    body.style.overflow = 'hidden';
+    menu.style.display = 'block';
+    overlay.style.display = 'block';
+
+    setTimeout(() => {
+      menu.style.opacity = '1';
+      overlay.style.opacity = '1';
+    }, 200)
+  })
+
+  overlay.addEventListener('click', () => {
+    body.style.overflow = 'scroll';
+    menu.style.opacity = '0';
+    overlay.style.opacity = '0';
+
+    setTimeout(() => {
+      menu.style.display = 'none';
+      overlay.style.display = 'none';
+    }, 200)
+  })
+})

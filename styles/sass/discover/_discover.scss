@@ -27,7 +27,7 @@
     }
 
     &__button {
-      @include button1(100px)
+      @include button1(200px);
     }
   }
 
@@ -76,50 +76,43 @@
 }
 
 
+
 @include desktop() {
   .discover__art {
-    &__container {
-      padding: 110px 0;
+    .imgCard__img {
+      width: 400px;
+      height: 350px;
+    }
+
+    &__imgCard__info {
+      width: 400px;
     }
 
     &__infoBlock {
-      width: 350px;
-
       &__title {
         font-size: 3.5rem;
-        line-height: 100%;
       }
 
       &__text {
         font-size: 1.2rem;
-        line-height: 140%;
-        margin: 20px 0px;
-        width: 90%;
       }
 
       &__button {
-        @include button1(90px)
+        @include button1(150px, 15px, .9rem);
       }
     }
 
     &__advantages {
-      width: 80%;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
+      width: 350px;
+
 
       &__item {
         .num {
-          font-family: 'Space Mono', monospace;
-          font-size: 2rem;
-          font-weight: 700;
-          line-height: 140%;
+          font-size: 1.8rem;
         }
 
         .advantages {
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 160%;
+          font-size: 1.2rem;
         }
       }
     }
@@ -127,15 +120,83 @@
 }
 
 @include tablet() {
-  .header {
-    width: 700px;
+  .discover__art {
+    &__container {
+      padding: 100px 0;
+    }
 
+    .imgCard__img {
+      width: 350px;
+      height: 300px;
+    }
 
+    &__imgCard__info {
+      width: 350px;
+    }
+
+    &__infoBlock {
+      width: 400px;
+
+      &__button {
+        @include button1(200px, 15px, .9rem);
+      }
+
+      &__title {
+        font-size: 2.5rem;
+      }
+
+      &__text {
+        font-size: 1rem;
+        width: 300px;
+      }
+    }
+
+    &__advantages {
+      width: 300px;
+      margin-top: 20px;
+
+      &__item {
+        .num {
+          font-size: 1.4rem;
+        }
+
+        .advantages {
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 }
 
 @include mobile() {
-  .header {
-    width: 375px;
+  .discover__art {
+    &__container {
+      flex-direction: column;
+      padding: 70px 0;
+    }
+
+    .imgCard__img {
+      margin-top: 30px;
+      width: 350px;
+      height: 300px;
+    }
+
+    &__imgCard__info {
+      width: 350px;
+    }
+
+    &__infoBlock {
+      width: 350px;
+
+
+      &__text {
+        width: 100%;
+      }
+
+      &__button {
+        @include button1(100%);
+      }
+    }
+
   }
 }

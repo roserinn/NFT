@@ -43,3 +43,73 @@
     }
   }
 }
+
+
+@include tablet() {
+  .weeklyDigest {
+    &__container {
+      width: 700px;
+
+      img {
+        width: 320px;
+      }
+    }
+
+    .info {
+      width: 300px;
+
+      &__title {
+        font-size: 2.5rem;
+      }
+
+      &__text {
+        font-size: 1rem;
+      }
+    }
+
+    .email__form {
+      border-radius: $borderRadius;
+      padding: 20px;
+      background: $textColor;
+      position: relative;
+
+      .submit {
+        &__button {
+          top: 0;
+          right: 0;
+          position: absolute;
+          @include button1(120px, 18px, .8rem)
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .weeklyDigest {
+    &__container {
+      padding: 70px 0px;
+      display: flex;
+      flex-direction: column;
+      width: 330px;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .info {
+      width: 300px;
+
+      &__title {
+        margin-top: 20px;
+        font-size: 3rem;
+      }
+
+      &__text {
+        font-size: 1.3rem;
+        margin: 20px 0px;
+      }
+    }
+  }
+}

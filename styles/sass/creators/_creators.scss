@@ -1,5 +1,4 @@
 .creators {
-
   &__container {
     padding: 100px 0px;
   }
@@ -84,6 +83,92 @@
         font-weight: 400;
         font-family: 'Space Mono', monospace;
         color: $textGrey;
+      }
+    }
+  }
+}
+
+
+@include tablet() {
+  .creators {
+
+    &__container {
+      padding: 70px 0px;
+    }
+
+    &__title {
+      @include h2__styles;
+    }
+
+    &__row {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 130px);
+      gap: 30px;
+    }
+
+    &__info__block {
+      button {
+        @include button2(200px);
+      }
+    }
+
+    .item {
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+
+      img {
+        width: 80px;
+        margin: 20px 20px 20px 0px;
+      }
+
+      &__title {
+        font-size: 1.2rem;
+      }
+
+    }
+  }
+}
+
+@include mobile() {
+  .creators {
+
+    &__container {
+      padding: 70px 0px;
+    }
+
+    &__title {
+      @include h2__styles(start, 2rem);
+    }
+
+    &__row {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 130px);
+      gap: 30px;
+    }
+
+    &__info__block {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        @include button2(100%, 15px, .9rem);
+      }
+
+      p {
+        @include text__styles(start, .9rem);
+      }
+    }
+
+    .item {
+      img {
+        width: 80px;
+        margin: 20px 20px 20px 0px;
+      }
+
+      &__title {
+        font-size: 1rem;
       }
     }
   }

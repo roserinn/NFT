@@ -38,7 +38,6 @@
 
   }
 
-
   &__timer {
     background-color: hsla(0, 0%, 17%, 0.663);
     padding: 30px;
@@ -64,5 +63,59 @@
       word-spacing: 3.3rem;
     }
 
+  }
+}
+
+@include desktop() {
+  .mushrooms {
+
+    &__container {
+      padding: 250px 0px 60px;
+      width: 1000px;
+    }
+  }
+}
+
+@include tablet() {
+  .mushrooms {
+    &__container {
+      padding: 250px 0px 60px;
+      width: 700px;
+    }
+
+    .info {
+      &__button {
+        @include button3(150px);
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .mushrooms {
+    &__container {
+      padding: 200px 0px 60px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 40px;
+
+      &__title {
+        @include h2__styles;
+        margin: 40px 0px
+      }
+
+      &__button {
+        @include button3(330px);
+      }
+    }
   }
 }
